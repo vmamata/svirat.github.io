@@ -544,6 +544,8 @@ select{
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
 	background: #0080FF;
 	padding: 8px 15px 8px 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer; 
 	border: none;
 	color: #fff;
 }
@@ -551,9 +553,11 @@ select{
   background: #0080FF;
   text-align: center;
   align-content: center;
-	box-shadow:none;
-	-moz-box-shadow:none;
-	-webkit-box-shadow:none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer; 
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
 }
 .form-style-1 .required{
 	color:red;
