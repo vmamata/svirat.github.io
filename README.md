@@ -1,2 +1,2 @@
 # svirat.github.io
-Online portfolio.
+My portfolio.
