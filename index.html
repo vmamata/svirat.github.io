@@ -398,6 +398,7 @@ function load() {
   window.onscroll = function() {
     scroll();
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    scrollPosition += document.getElementById("navbar").offsetHeight * 2; //make the navbar light up earlier
 
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
