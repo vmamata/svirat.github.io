@@ -261,17 +261,19 @@ main#home h1 {
   padding: 0.5rem;
   border-bottom: #0080FF 5px solid;  }
 
- .experience .btn-dark {
-    background: black;
-    width: 300px;
-    color: #fff; 
-    font-size: 23px;
-    text-align: center}
+.experience .btn-dark {
+  background: black;
+  width: 300px;
+  color: #fff; 
+  cursor: pointer;
+  font-size: 23px;
+  text-align: center}
   
 .experience  .btn-light {
   background: #c4c4c4;
   width: 300px;
   color: #333;
+  cursor: pointer;
   font-size: 23px;
   text-align: center }
   
@@ -279,6 +281,7 @@ main#home h1 {
   background: #0080FF;
   width: 300px;
   color: #fff;
+  cursor: pointer;
   font-size: 23px;
   text-align: center; }
     
@@ -307,6 +310,31 @@ main#home h1 {
   width: 340px; /* 375px; */
   padding: 0.5rem;
   border-bottom: #0080FF 5px solid;  }
+
+
+.projects .btn-dark {
+  background: black;
+  width: 340px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  text-align: center}
+  
+.projects .btn-light {
+  background: #c4c4c4;
+  width: 340px;
+  color: #333;
+  font-size: 23px;
+  cursor: pointer;
+  text-align: center }
+  
+.projects .btn-clicked {
+  background: #0080FF;
+  width: 340px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  text-align: center; }
 
 .boxes {
   display: flex;
@@ -366,113 +394,89 @@ main#home h1 {
   color: #0080FF;
   transition: all 0.5s ease-out; }
 
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .container {
-    position: relative;
-    width: 250px;
-    /* grid-template-columns: repeat(4, 1fr);  */
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 250px;
-    width: 300px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .container:hover .overlay {
-    opacity: 0.8;
-  }
-  
-  .text {
-    color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-      body {
-        margin: 0;
-        font-size: 28px;
-      }
-      
-      .header {
-        background-color: #f1f1f1;
-        padding: 30px;
-        text-align: center;
-      }
-      
-      #navbar {
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      #navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      #navbar a:hover {
-        background-color: #0080FF;
-        color: white;
-      }
-      
-      #navbar a.active {
-        background-color: #0080FF;
-        color: white;
-      }
-      
-      .content {
-        padding: 16px;
-      }
-      
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
-      .sticky + .content {
-        padding-top: 60px;
-      }
-
-      
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); }
-    .container {
-      grid-template-columns: repeat(4, 1fr); }
-    .experience {
-      grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
-    .container {
-      grid-template-columns: repeat(3, 1fr); }
-    .experience {
-      grid-template-columns: repeat(3, 1fr); }
+html {
+  scroll-behavior: smooth;
 }
+  
+.container {
+  position: relative;
+  width: 250px;
+  /* grid-template-columns: repeat(4, 1fr);  */
+}
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+  
+.container:hover .overlay {
+  opacity: 0.8;
+}
+  
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+body {
+  margin: 0;
+  font-size: 28px;
+}
+      
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+      
+#navbar {
+  overflow: hidden;
+  background-color: #333; }
+      
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+      
+#navbar a:hover {
+  background-color: #0080FF;
+  color: white; }
+      
+#navbar a.active {
+  background-color: #0080FF;
+  color: white; }
+      
+.content {
+  padding: 16px; }
+      
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+      
+.sticky + .content {
+  padding-top: 60px; }
 
+      
 .form-style-1 {
 	margin:10px auto;
 	max-width: 400px;
@@ -562,6 +566,24 @@ select{
 .form-style-1 .required{
 	color:red;
 }
+      
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); }
+    .container {
+      grid-template-columns: repeat(4, 1fr); }
+    .experience {
+      grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); }
+    .container {
+      grid-template-columns: repeat(3, 1fr); }
+    .experience {
+      grid-template-columns: repeat(3, 1fr); }
+}
+
 
 @media screen and (max-width: 768px) {
   main {
@@ -597,12 +619,12 @@ select{
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
-    .container {
-      grid-template-columns: repeat(2, 1fr); }
-    .experience {
-      grid-template-columns: repeat(2, 1fr); }
+  .container {
+    grid-template-columns: repeat(2, 1fr); }
+  .experience {
+    grid-template-columns: repeat(2, 1fr); }
   /*.experience {
-      grid-template-columns: repeat(1, 1fr); }  */
+    grid-template-columns: repeat(1, 1fr); }  */
 }
 
 @media screen and (max-width: 500px) {
