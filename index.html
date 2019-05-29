@@ -385,6 +385,7 @@ function load() {
 }
 
 AOS.init(); //initiate animations
+AOS.init({mirror: true,}); //also keep animations when scrolling up
 
 // When the user scrolls the page, execute smooth scroll 
 window.onscroll = function() {scroll()};
