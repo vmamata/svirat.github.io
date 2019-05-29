@@ -16,12 +16,12 @@
 <body id="bg-img" onload="load()">
   <header id="main-navbar">
     <div id="navbar">
-      <a href="#home" id="sec1" onclick="changeActive(this.id)">Home</a>
-      <a href="#about" id="sec2" onclick="changeActive(this.id)">About</a>
-      <a href="#experience" id="sec3" onclick="changeActive(this.id)">Experience</a>
-      <a href="#work" id="sec4" onclick="changeActive(this.id)">Projects</a>
-      <a href="#education" id="sec5" onclick="changeActive(this.id)">Education</a>
-      <a href="#contact" id="sec6" onclick="changeActive(this.id)">Contact</a>
+      <a href="#home" class="active" onclick="changeActive(this.id)">Home</a>
+      <a href="#about" onclick="changeActive(this.id)">About</a>
+      <a href="#experience" onclick="changeActive(this.id)">Experience</a>
+      <a href="#work" onclick="changeActive(this.id)">Projects</a>
+      <a href="#education" onclick="changeActive(this.id)">Education</a>
+      <a href="#contact" onclick="changeActive(this.id)">Contact</a>
     </div>
     
     
@@ -29,7 +29,7 @@
 
   <!-- HOME -->
 
-  <main data-aos="fade-in" id="home">
+  <main data-aos="fade-in" id="home" class="major-section">
     
     <h1 class="lg-heading">
       <span class="white-color">Virat</span>
@@ -64,7 +64,7 @@
   <!-- ABOUT -->
 
 
-  <main id="about">
+  <main id="about" class="major-section">
     <h1 data-aos="fade-in" class="md-heading">
       About
       <span class="text-blue">Me</span>
@@ -107,7 +107,7 @@
   
   <!-- EXPERIENCE -->
 
-  <main id="experience">
+  <main id="experience" class="major-section">
     <h2 data-aos="fade-in" class="md-heading">
       My
       <span class="text-blue">Work</span>
@@ -197,7 +197,7 @@
   
   <!-- PROJECTS -->
 
-  <main id="work">
+  <main id="work" class="major-section">
     <h1 data-aos="fade-in" class="md-heading">
       Personal
       <span class="text-blue">Projects</span>
@@ -283,7 +283,7 @@
   
   <!-- EDUCATION -->
 
-  <main id="education">
+  <main id="education" class="major-section">
     <h1 data-aos="fade-in" class="md-heading">
       My
       <span class="text-blue">Studies</span>
@@ -311,7 +311,7 @@
   <!-- CONTACT -->
 
 
-  <main id="contact">
+  <main id="contact" class="major-section">
     <h1 data-aos="fade-in" class="md-heading">
       Contact
       <span class="text-blue">Me</span>
@@ -384,11 +384,34 @@ function load() {
   }
 }
 
-AOS.init(); //initiate animations
-//AOS.init({mirror: true,}); //also keep animations when scrolling up
+(function() {
+  'use strict';
 
-// When the user scrolls the page, execute smooth scroll 
-window.onscroll = function() {scroll()};
+  var section = document.querySelectorAll(".major-section");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    scroll();
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();
+
+
+AOS.init(); //initiate animations
+AOS.init({mirror: true,}); //also keep animations when scrolling up
+
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
