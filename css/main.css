@@ -458,12 +458,11 @@ body {
   font-size: 17px; }
       
 #navbar a:hover {
-  background-color: #0080FF;
-  color: white; }
+  color: #0080FF; }
       
 #navbar a.active {
-  background-color: #0080FF;
-  color: white; }
+  color: #0080FF;
+  border-bottom: 3px solid #0080FF; }
       
 .content {
   padding: 16px; }
