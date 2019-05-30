@@ -1,5 +1,6 @@
 :root {
   --secondary-color: #0080FF; 
+  --darker-secondary-color: rgb(0, 70, 255);
 }
 
 .menu-btn {
@@ -549,20 +550,23 @@ select{
 	height: 100px;
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: var(--secondary-color);;
+  background: var(--secondary-color);
+  border-radius: 5%;
 	padding: 8px 15px 8px 15px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        cursor: pointer; 
+  cursor: pointer; 
 	border: none;
 	color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-  background: var(--secondary-color);;
+  background: var(--darker-secondary-color);
+  border-radius: 5%;
   text-align: center;
   align-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer; 
-  box-shadow:none;
+  box-shadow: none;
+  border: none;
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
 }
