@@ -1,3 +1,7 @@
+:root {
+  --secondary-color: #0080FF; 
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -57,14 +61,14 @@
   height: 250px;
   background: url("../img/linkedindp.jpg");
   border-radius: 35%;
-  border: solid 3px #0080FF; }
+  border: solid 3px var(--main-bg-color); }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out; }
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0); }
 .menu .nav-item.current > a {
-  color: #0080FF; } 
+  color: var(--secondary-color);; } 
 .menu .nav-link {
   display: inline-block;
   position: relative;
@@ -76,7 +80,7 @@
   text-decoration: none;
   transition: all 0.5s ease-out; }
 .menu .nav-link:hover {
-  color: #0080FF; }
+  color: var(--secondary-color); }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.05s; }
@@ -149,7 +153,7 @@ header {
   color: #eece1a; }
 
 .text-blue {
-  color: #0080FF;
+  color: var(--secondary-color);
 }
 
 .purple-color {
@@ -178,7 +182,7 @@ main .icons {
 main .icons a {
   padding: 0.4rem; }
 main .icons a:hover {
-  color: #0080FF;
+  color: var(--secondary-color);;
   transition: all 0.5s ease-out; }
 main#home {
   overflow: hidden; }
@@ -193,11 +197,11 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 20%; 
-  border:#0080FF 3px solid; }
+  border:var(--secondary-color) 3px solid; }
 .education .bio {
   grid-area: bio;
   font-size: 1.5rem;
-  /* border-bottom: #0080FF 5px solid;*/ }
+  /* border-bottom: var(--secondary-color); 5px solid;*/ }
 .education .job-1 {
   grid-area: job1; }
 .education .job-2 {
@@ -210,7 +214,7 @@ main#home h1 {
   position: absolute;
   width: 360px;
   padding: 0.5rem;
-  border-bottom: #0080FF 5px solid;  }
+  border-bottom: var(--secondary-color) 5px solid;  }
       
 .about-info {
   display: grid;
@@ -221,7 +225,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 35%; 
-  border: #0080FF 3px solid; }
+  border: var(--secondary-color) 3px solid; }
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem; }
@@ -233,7 +237,7 @@ main#home h1 {
   grid-area: job3; }
 .about-info .job {
   padding: 0.5rem;
-  border-bottom: #0080FF 5px solid; }
+  border-bottom: var(--secondary-color) 5px solid; }
 
 .experience {
   display: grid;
@@ -241,10 +245,10 @@ main#home h1 {
   grid-template-columns: repeat(4, 1fr); }
 .experience img {
   width: 300px;
-  border: 3px #0080FF solid; }
+  border: 3px var(--secondary-color) solid; }
 .experience img:hover {
   opacity: 0.5;
-  border-color: #0080FF;
+  border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .experience .job-1 {
   grid-area: job1; }
@@ -259,7 +263,7 @@ main#home h1 {
   font-size: 20px;
   width: 300px; /* 360px; */
   padding: 0.5rem;
-  border-bottom: #0080FF 5px solid;  }
+  border-bottom: var(--secondary-color) 5px solid;  }
 
 .experience .btn-dark {
   background: black;
@@ -278,7 +282,7 @@ main#home h1 {
   text-align: center }
   
 .experience  .btn-clicked {
-  background: #0080FF;
+  background: var(--secondary-color);;
   width: 300px;
   color: #fff;
   cursor: pointer;
@@ -291,10 +295,10 @@ main#home h1 {
   grid-template-columns: repeat(3, 1fr); }
 .projects img {
   width: 100%;
-  border: 3px #0080FF solid; }
+  border: 3px var(--secondary-color) solid; }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #0080FF;
+  border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .projects .job-1 {
   grid-area: job1; }
@@ -309,7 +313,7 @@ main#home h1 {
   position: absolute;
   width: 340px; /* 375px; */
   padding: 0.5rem;
-  border-bottom: #0080FF 5px solid;  }
+  border-bottom: var(--secondary-color) 5px solid;  }
 
 
 .projects .btn-dark {
@@ -329,7 +333,7 @@ main#home h1 {
   text-align: center }
   
 .projects .btn-clicked {
-  background: #0080FF;
+  background: var(--secondary-color);;
   width: 340px;
   color: #fff;
   cursor: pointer;
@@ -344,14 +348,14 @@ main#home h1 {
   margin-top: 1rem; }
 .boxes div {
   font-size: 2rem;
-  border: 3px #0080FF solid;
+  border: 3px var(--secondary-color) solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   background: white;
   transition: all 0.5s ease-out; }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #0080FF;
+  background: var(--secondary-color);
   color: white; }
 .boxes div:hover span {
   color: white; }
@@ -362,7 +366,7 @@ main#home h1 {
   border: 0;
   margin-bottom: 0.3rem; }
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #0080FF;
+  background: var(--secondary-color);;
   color: white; }
 
 .btn-dark {
@@ -376,7 +380,7 @@ main#home h1 {
   text-align: center }
 
 .btn-clicked {
-  background: #0080FF;
+  background: var(--secondary-color);;
   color: #fff;
   text-align: center;
 }
@@ -391,7 +395,7 @@ main#home h1 {
 .footer .icons a {
   padding: 0.2rem; }
 .footer .icons a:hover {
-  color: #0080FF;
+  color: var(--secondary-color);;
   transition: all 0.5s ease-out; }
 
 html {
@@ -458,11 +462,11 @@ body {
   font-size: 17px; }
       
 #navbar a:hover {
-  color: #0080FF; }
+  color: var(--secondary-color);; }
       
 #navbar a.active {
-  color: #0080FF;
-  border-bottom: 3px solid #0080FF; }
+  color: var(--secondary-color);;
+  border-bottom: 3px solid var(--secondary-color);; }
       
 .content {
   padding: 16px; }
@@ -526,10 +530,10 @@ select{
 .form-style-1 input[type=email]:focus,
 .form-style-1 textarea:focus, 
 .form-style-1 select:focus{
-	-moz-box-shadow: 0 0 8px #0080FF;
-	-webkit-box-shadow: 0 0 8px #0080FF;
-	box-shadow: 0 0 8px #0080FF;
-	border: 1px solid #0080FF;
+	-moz-box-shadow: 0 0 8px var(--secondary-color);;
+	-webkit-box-shadow: 0 0 8px var(--secondary-color);;
+	box-shadow: 0 0 8px var(--secondary-color);;
+	border: 1px solid var(--secondary-color);;
 }
 .form-style-1 .field-divided{
 	width: 49%;
@@ -545,7 +549,7 @@ select{
 	height: 100px;
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: #0080FF;
+	background: var(--secondary-color);;
 	padding: 8px 15px 8px 15px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         cursor: pointer; 
@@ -553,7 +557,7 @@ select{
 	color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-  background: #0080FF;
+  background: var(--secondary-color);;
   text-align: center;
   align-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
