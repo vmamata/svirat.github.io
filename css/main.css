@@ -552,11 +552,12 @@ select{
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
   background: var(--secondary-color);
   border-radius: 5%;
-	padding: 8px 15px 8px 15px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 15px 8px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer; 
-	border: none;
-	color: #fff;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
   background: var(--darker-secondary-color);
@@ -569,6 +570,7 @@ select{
   border: none;
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
+  transition: 0.3s;
 }
 .form-style-1 .required{
 	color:red;
