@@ -412,8 +412,10 @@ function load() {
 
 
 AOS.init(); //initiate animations
-//AOS.init({mirror: true,}); //also keep animations when scrolling up
-
+AOS.init({
+  once: true, //animations only happen once on loading page
+  //mirror: true, //also keep animations when scrolling up
+}); 
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
