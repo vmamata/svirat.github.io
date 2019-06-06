@@ -373,7 +373,8 @@ main#home h1 {
 .btn-dark {
   background: black;
   color: #fff; 
-  text-align: center}
+  text-align: center;
+  transition: 0.3s;}
 
 .btn-light {
   background: #c4c4c4;
