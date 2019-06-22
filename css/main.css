@@ -295,7 +295,6 @@ main#home h1 {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
 .projects img {
-  width: 100%;
   border: 3px var(--secondary-color) solid; }
 .projects img:hover {
   opacity: 0.5;
@@ -312,14 +311,13 @@ main#home h1 {
   opacity: 0.9;
   font-size: 20px;
   position: absolute;
-  width: 340px; /* 375px; */
+  width: 300px; /* 375px; */
   padding: 0.5rem;
   border-bottom: var(--secondary-color) 5px solid;  }
 
-
 .projects .btn-dark {
   background: black;
-  width: 340px;
+  width: 300px;
   color: #fff;
   cursor: pointer;
   font-size: 23px;
@@ -327,7 +325,7 @@ main#home h1 {
   
 .projects .btn-light {
   background: #c4c4c4;
-  width: 340px;
+  width: 300px;
   color: #333;
   font-size: 23px;
   cursor: pointer;
@@ -335,7 +333,7 @@ main#home h1 {
   
 .projects .btn-clicked {
   background: var(--secondary-color);;
-  width: 340px;
+  width: 300px;
   color: #fff;
   cursor: pointer;
   font-size: 23px;
