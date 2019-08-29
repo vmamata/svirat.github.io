@@ -647,12 +647,15 @@ body#bg-img:after {
 
   
   .projects .btn-dark {
+    border-bottom: var(--secondary-color) 2px solid;
     margin: auto;}
     
   .projects .btn-light {
+    border-bottom: var(--secondary-color) 2px solid;
     margin: auto; }
     
   .projects .btn-clicked {
+    border-bottom: var(--secondary-color) 2px solid;
     margin: auto;}
 
   main {
@@ -722,12 +725,16 @@ body#bg-img:after {
     background-size: cover; } 
 
     .projects .btn-dark {
-      margin: auto;}
+      margin: auto;
+      border-bottom: var(--secondary-color) 2px solid;
+    }
       
     .projects .btn-light {
+      border-bottom: var(--secondary-color) 2px solid;
       margin: auto;}
       
     .projects .btn-clicked {
+      border-bottom: var(--secondary-color) 2px solid;
       margin: auto; }
   
   main {
