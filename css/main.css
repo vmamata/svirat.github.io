@@ -104,29 +104,6 @@
 * {
   box-sizing: border-box; }
 
-body {
-  background: #F2F3F4;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-body#bg-img {
-  /*background: url(../img/moon.jpg); */
-  background-attachment: fixed;
-  background-size: cover; }
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
-  background-attachment: fixed;
-  background-size: cover; } 
-
 h1, h2, h3 {
   margin: 0;
   align-content: center;
@@ -578,6 +555,30 @@ select{
 }
       
 @media screen and (min-width: 1171px) {
+  
+body {
+  background: #F2F3F4;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+body#bg-img {
+  /*background: url(../img/moon.jpg); */
+  background-attachment: fixed;
+  background-size: cover; }
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
+  background-attachment: fixed;
+  background-size: cover; } 
+
   .projects {
     grid-template-columns: repeat(4, 1fr); }
     .container {
@@ -586,6 +587,30 @@ select{
       grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  
+body {
+  background: #F2F3F4;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+body#bg-img {
+  /*background: url(../img/moon.jpg); */
+  background-attachment: fixed;
+  background-size: cover; }
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
+  background-attachment: fixed;
+  background-size: cover; } 
+
   .projects {
     grid-template-columns: repeat(3, 1fr); }
     .container {
@@ -596,6 +621,30 @@ select{
 
 
 @media screen and (max-width: 768px) {
+  
+body {
+  background: #F2F3F4;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+body#bg-img {
+  /*background: url(../img/moon.jpg); */
+  background-attachment: fixed;
+  background-size: cover; }
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
+  background-attachment: fixed;
+  background-size: cover; } 
+
   main {
     align-items: center;
     text-align: center; }
@@ -638,6 +687,30 @@ select{
 }
 
 @media screen and (max-width: 500px) {
+
+  body {
+    background: #F2F3F4;
+    color: #000;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; }
+  body#bg-img {
+    /*background: url(../img/moon.jpg); */
+    background-attachment: fixed;
+    background-size: cover; }
+  body#bg-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
+    background-attachment: fixed;
+    background-size: cover; } 
+  
   main {
     padding: 2rem; }
   main #home h1 {
