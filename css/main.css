@@ -232,20 +232,16 @@ main#home h1 {
   border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .experience .job-1 {
-  margin: auto;
   grid-area: job1; }
 .experience .job-2 {
-  margin: auto;
   grid-area: job2; }
 .experience .job-3 {
-  margin: auto;
   grid-area: job3; }
 .experience .job {
   background: white;
   opacity: 0.9;
   position: absolute;
   font-size: 20px;
-  margin: auto;
   width: 300px; /* 360px; */
   padding: 0.5rem;
   border-bottom: var(--secondary-color) 5px solid;  }
