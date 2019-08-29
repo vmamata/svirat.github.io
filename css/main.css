@@ -220,25 +220,32 @@ main#home h1 {
 .experience {
   display: grid;
   grid-gap: 0.7rem;
+  margin: auto;
   grid-template-columns: repeat(4, 1fr); }
 .experience img {
   width: 300px;
+  margin: auto;
   border: 3px var(--secondary-color) solid; }
 .experience img:hover {
   opacity: 0.5;
+  margin: auto;
   border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .experience .job-1 {
+  margin: auto;
   grid-area: job1; }
 .experience .job-2 {
+  margin: auto;
   grid-area: job2; }
 .experience .job-3 {
+  margin: auto;
   grid-area: job3; }
 .experience .job {
   background: white;
   opacity: 0.9;
   position: absolute;
   font-size: 20px;
+  margin: auto;
   width: 300px; /* 360px; */
   padding: 0.5rem;
   border-bottom: var(--secondary-color) 5px solid;  }
