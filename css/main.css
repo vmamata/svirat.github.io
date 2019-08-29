@@ -607,7 +607,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* url(../img/GraduationPic2.jpg); */
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
   background-attachment: fixed;
   background-size: cover; } 
 
@@ -644,6 +644,16 @@ body#bg-img:after {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
   background-attachment: fixed;
   background-size: cover; } 
+
+  
+  .projects .btn-dark {
+    margin: auto;}
+    
+  .projects .btn-light {
+    margin: auto; }
+    
+  .projects .btn-clicked {
+    margin: auto;}
 
   main {
     align-items: center;
@@ -710,6 +720,15 @@ body#bg-img:after {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
     background-attachment: fixed;
     background-size: cover; } 
+
+    .projects .btn-dark {
+      margin: auto;}
+      
+    .projects .btn-light {
+      margin: auto;}
+      
+    .projects .btn-clicked {
+      margin: auto; }
   
   main {
     padding: 2rem; }
