@@ -23,6 +23,7 @@
       <a href="#work" onclick="changeActive(this.id)">Projects</a>
       <a href="#education" onclick="changeActive(this.id)">Education</a>
       <a href="#contact" onclick="changeActive(this.id)">Contact</a>
+      <button onclick="changeMode()" title="Toggle Night Mode">🌙</button> 
     </div>
     
     
@@ -49,14 +50,13 @@
       <a href="https://www.facebook.com/singhvir" target="_blank" >
         <i class="fab fa-facebook fa-1x"></i>
       </a>
+      <!--
       <a href="https://www.instagram.com/reallyvirat" target="_blank" >
         <i class="fab fa-instagram fa-1x"></i>
       </a>
-      <!--
       <a href="https://www.twitter.com/svirat" target="_blank" >
         <i class="fab fa-twitter fa-1x"></i>
-      </a>
-      -->
+      </a>-->
     </div>
   </main>
 
@@ -217,7 +217,7 @@
         </a>
         <button id="learn1" onclick="toggle('proj1', this.id)" class="btn-dark"><i class="fas fa-eye"></i> Learn More</button>
 
-        <div id="proj1" class="job job-4" style="display: none; margin: auto;">
+        <div id="proj1" class="job job-4" style="display: none">
           • Created a Twitter bot which tweets certain information like free eBooks, quotes, stocks, etc. every day. Also retweets and favorites other popular tweets based on hashtags, text, and location <br> 
           • Used Requests and BeautifulSoup to scrape the web for daily information and used multithreading to run features (like tweeting, favoriting, and so on) concurrently <br>
           • Used a Raspberry Pi to run the bot twenty-four hours a day, every day
@@ -231,7 +231,7 @@
         </a>
         <button id="learn2" onclick="toggle('proj2', this.id)" class="btn-dark"><i class="fas fa-eye"></i> Learn More</button>
 
-        <div id="proj2" class="job job-4" style="display: none; margin: auto;">
+        <div id="proj2" class="job job-4" style="display: none">
           • Created a messaging service that allows remote users to communicate with each other swiftly and securely <br>
           • Utilized JavaScript Sockets and Transmission Control Protocol to deliver packets safely without drop, and used User Datagram Protocol to host group chats <br>
           • Secured user messages with end-to-end encryption using an affine cipher, generating random keys for every session
@@ -244,7 +244,7 @@
           <i class="fab fa-github"></i> Custom Tetris
         </a>
         <button id="learn3" onclick="toggle('proj3', this.id)" class="btn-dark"><i class="fas fa-eye"></i> Learn More</button>
-        <div id="proj3" class="job job-4" style="display: none; margin: auto;">
+        <div id="proj3" class="job job-4" style="display: none">
           • Emulated the popular video game Tetris, using C++’s Boost libraries to create game logic and eigenvalues for block rotation and movement <br>
           • Used window-based application software Qt to display board, move blocks, and erase rows <br>
           • Allows user to change board dimensions dynamically and customize falling speeds for each piece
@@ -258,7 +258,7 @@
         </a>
 
         <button id="learn4" onclick="toggle('proj4', this.id)" class="btn-dark"><i class="fas fa-eye"></i> Learn More</button>
-        <div id="proj4" class="job job-4" style="display: none; margin: auto;">
+        <div id="proj4" class="job job-4" style="display: none">
           • Created a video game based on the Fallout series’ classic hacking mini-game <br>
           • Read Google Enabler text file to feature all words in the English language, and wrote an algorithm to hold any number of difficulty levels, which change word length and number of words shown <br>
           • Can be customized to feature words from other languages, and add or remove certain words
@@ -272,7 +272,7 @@
         </a>
         <button id="learn5" onclick="toggle('proj5', this.id)" class="btn-dark"><i class="fas fa-eye"></i> Learn More</button>
 
-        <div id="proj5" class="job job-4" style="display: none; margin: auto;">
+        <div id="proj5" class="job job-4" style="display: none">
           • Created a project which is able to determine the taxes to be paid based on certain purchases <br>
           • Has backlog of how much different goods are generally taxed, for example, imported items or edible items, and uses this data to compute prices <br>
           • Is able to be extended to calculate the cost of any other items, as the backlog is easily editable
@@ -365,11 +365,9 @@
         <a href="https://www.instagram.com/reallyvirat" target="_blank" >
           <i class="fab fa-instagram fa-1x"></i>
         </a> &nbsp;
-      <!--
         <a href="https://www.twitter.com/svirat" target="_blank" >
           <i class="fab fa-twitter fa-1x"></i>
         </a>
-      -->
     </div>
     <span class="text-blue sm-heading">Virat Singh</span> <span class="sm-heading">© 2019 </span>
 </footer>
@@ -432,6 +430,20 @@ function scroll() {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
+  }
+}
+
+var currentlyNight = false;
+function changeMode() {
+  //change to morning
+  if(currentlyNight) {
+    document.documentElement.setAttribute('data-theme', 'light');
+    currentlyNight = false;
+  }
+  //change to night
+  else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    currentlyNight = true;
   }
 }
 
