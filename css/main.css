@@ -1,6 +1,24 @@
 :root {
+  --primary-color: #302AE6;
   --secondary-color: #0080FF; 
   --darker-secondary-color: rgb(0, 70, 255);
+  --font-color: #000;
+  --bg-color: #F2F3F4;
+  --heading-color: #000;
+  --navbar-background: #111;
+  --button-border-color: none;
+  --dropdown-color: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #302AE6;
+  --secondary-color: #0080FF;
+  --font-color: #fff;
+  --bg-color: #232b2b;
+  --heading-color: #e1e1ff;
+  --navbar-background: #111;
+  --button-border-color: 0.5px solid #e1e1ff;
+  --dropdown-color: #000;
 }
 
 .menu-btn {
@@ -14,7 +32,7 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #F2F3F4;
+  background: var(--bg-color);
   transition: all 0.5s ease-out; }
 .menu-btn.close {
   transform: rotate(180deg); }
@@ -104,6 +122,29 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+body#bg-img {
+  /*background: url(../img/moon.jpg); */
+  background-attachment: fixed;
+  background-size: cover; }
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
+  background-attachment: fixed;
+  background-size: cover; } 
+
 h1, h2, h3 {
   margin: 0;
   align-content: center;
@@ -187,7 +228,7 @@ main#home h1 {
 .education .job-3 {
   grid-area: job3; }
 .education .job {
-  background: white;
+  background: var(--dropdown-color);
   opacity: 0.9;
   position: absolute;
   width: 360px;
@@ -220,15 +261,12 @@ main#home h1 {
 .experience {
   display: grid;
   grid-gap: 0.7rem;
-  margin: auto;
   grid-template-columns: repeat(4, 1fr); }
 .experience img {
   width: 300px;
-  margin: auto;
   border: 3px var(--secondary-color) solid; }
 .experience img:hover {
   opacity: 0.5;
-  margin: auto;
   border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .experience .job-1 {
@@ -238,7 +276,7 @@ main#home h1 {
 .experience .job-3 {
   grid-area: job3; }
 .experience .job {
-  background: white;
+  background: var(--dropdown-color);
   opacity: 0.9;
   position: absolute;
   font-size: 20px;
@@ -252,7 +290,9 @@ main#home h1 {
   color: #fff; 
   cursor: pointer;
   font-size: 21px;
-  text-align: center}
+  text-align: center;
+  border: var(--button-border-color);
+}
   
 .experience  .btn-light {
   background: #c4c4c4;
@@ -288,7 +328,7 @@ main#home h1 {
 .projects .job-3 {
   grid-area: job3; }
 .projects .job {
-  background: white;
+  background: var(--dropdown-color);
   opacity: 0.9;
   font-size: 20px;
   position: absolute;
@@ -303,7 +343,9 @@ main#home h1 {
   color: #fff;
   cursor: pointer;
   font-size: 23px;
-  text-align: center}
+  text-align: center;
+  border: var(--button-border-color);
+}
   
 .projects .btn-light {
   background: #c4c4c4;
@@ -345,16 +387,22 @@ main#home h1 {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  border: var(--button-border-color);
+ }
 .btn:hover, .btn-dark:hover, .btn-light:hover {
   background: var(--secondary-color);;
-  color: white; }
+  color: white;
+  border: var(--button-border-color);
+ }
 
 .btn-dark {
   background: black;
   color: #fff; 
   text-align: center;
-  transition: 0.3s;}
+  transition: 0.3s;
+  border: var(--button-border-color);
+}
 
 .btn-light {
   background: #c4c4c4;
@@ -432,7 +480,8 @@ body {
       
 #navbar {
   overflow: hidden;
-  background-color: #111; /* #333; */ }
+  background-color: var(--navbar-background); /* #333; */ 
+}
       
 #navbar a {
   float: left;
@@ -448,7 +497,16 @@ body {
       
 #navbar a.active {
   color: var(--secondary-color);;
-  border-bottom: 3px solid var(--secondary-color);; }
+  border-bottom: 3px solid var(--secondary-color); }
+
+#navbar button {
+  background: var(--navbar-background);
+  border-color: var(--heading-color);
+  float: right;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  cursor: pointer;
+}
       
 .content {
   padding: 16px; }
@@ -558,30 +616,6 @@ select{
 }
       
 @media screen and (min-width: 1171px) {
-  
-body {
-  background: #F2F3F4;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-body#bg-img {
-  /*background: url(../img/moon.jpg); */
-  background-attachment: fixed;
-  background-size: cover; }
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
-  background-attachment: fixed;
-  background-size: cover; } 
-
   .projects {
     grid-template-columns: repeat(4, 1fr); }
     .container {
@@ -590,30 +624,6 @@ body#bg-img:after {
       grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  
-body {
-  background: #F2F3F4;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-body#bg-img {
-  /*background: url(../img/moon.jpg); */
-  background-attachment: fixed;
-  background-size: cover; }
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-  background-attachment: fixed;
-  background-size: cover; } 
-
   .projects {
     grid-template-columns: repeat(3, 1fr); }
     .container {
@@ -624,43 +634,6 @@ body#bg-img:after {
 
 
 @media screen and (max-width: 768px) {
-  
-body {
-  background: #F2F3F4;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-body#bg-img {
-  /*background: url(../img/moon.jpg); */
-  background-attachment: fixed;
-  background-size: cover; }
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-  background-attachment: fixed;
-  background-size: cover; } 
-
-  
-  .projects .btn-dark {
-    border-bottom: var(--secondary-color) 2px solid;
-    margin: auto;}
-    
-  .projects .btn-light {
-    border-bottom: var(--secondary-color) 2px solid;
-    margin: auto; }
-    
-  .projects .btn-clicked {
-    border-bottom: var(--secondary-color) 2px solid;
-    margin: auto;}
-
   main {
     align-items: center;
     text-align: center; }
@@ -703,43 +676,6 @@ body#bg-img:after {
 }
 
 @media screen and (max-width: 500px) {
-
-  body {
-    background: #F2F3F4;
-    color: #000;
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5; }
-  body#bg-img {
-    /*background: url(../img/moon.jpg); */
-    background-attachment: fixed;
-    background-size: cover; }
-  body#bg-img:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-    background-attachment: fixed;
-    background-size: cover; } 
-
-    .projects .btn-dark {
-      margin: auto;
-      border-bottom: var(--secondary-color) 2px solid;
-    }
-      
-    .projects .btn-light {
-      border-bottom: var(--secondary-color) 2px solid;
-      margin: auto;}
-      
-    .projects .btn-clicked {
-      border-bottom: var(--secondary-color) 2px solid;
-      margin: auto; }
-  
   main {
     padding: 2rem; }
   main #home h1 {
