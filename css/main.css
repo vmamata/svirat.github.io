@@ -223,7 +223,13 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 20%; 
-  border:var(--secondary-color) 3px solid; }
+  border:var(--secondary-color) 3px solid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: var(--dropdown-color);}
+.education .bio-image:hover {
+  box-shadow: 0 8px 16px 0 var(--nightlight-color);
+}
 .education .bio {
   grid-area: bio;
   font-size: 1.5rem;
@@ -264,8 +270,14 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 35%; 
-  border: var(--secondary-color) 3px solid; }
-.about-info .bio {
+  border: var(--secondary-color) 3px solid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: var(--dropdown-color);}
+.about-info .bio-image:hover {
+  box-shadow: 0 8px 16px 0 var(--nightlight-color);
+}
+  .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem; }
 .about-info .job-1 {
