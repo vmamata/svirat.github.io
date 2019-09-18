@@ -8,6 +8,8 @@
   --navbar-background: #111;
   --button-border-color: none;
   --dropdown-color: #fff;
+  /* nightlight which is only highlighted in dark mode */
+  --nightlight-color: rgb(0,0,0,0.2);
 }
 
 [data-theme="dark"] {
@@ -19,6 +21,7 @@
   --navbar-background: #111;
   --button-border-color: 0.5px solid #e1e1ff;
   --dropdown-color: #000;
+  --nightlight-color: var(--secondary-color);
 }
 
 .menu-btn {
@@ -249,7 +252,7 @@ main#home h1 {
   
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 var(--nightlight-color);
 }
 
 .about-info {
