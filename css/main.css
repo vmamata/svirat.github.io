@@ -122,6 +122,10 @@
 * {
   box-sizing: border-box; }
 
+hr {
+  border: 1.5px solid var(--secondary-color);
+}
+
 body {
   background: var(--bg-color);
   color: var(--font-color);
