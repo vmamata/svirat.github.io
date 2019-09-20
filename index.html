@@ -23,7 +23,7 @@
       <a href="#work" onclick="changeActive(this.id)">Projects</a>
       <a href="#education" onclick="changeActive(this.id)">Education</a>
       <a href="#contact" onclick="changeActive(this.id)">Contact</a>
-      <button onclick="changeMode()" title="Toggle Night Mode">🌙</button> 
+      <button onclick="changeMode()" title="Toggle Night Mode" id="dark-mode-text">🌙</button> 
     </div>
     
     
@@ -454,11 +454,13 @@ function changeMode() {
   //change to morning
   if(currentlyNight) {
     document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById("dark-mode-text").innerHTML = "🌙";
     currentlyNight = false;
   }
   //change to night
   else {
     document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById("dark-mode-text").innerHTML = "☀️";
     currentlyNight = true;
   }
 }
