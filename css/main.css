@@ -682,9 +682,12 @@ select{
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
+  main .sm-heading {
+    font-size: 1rem;
+  }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -734,15 +737,22 @@ select{
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 2rem; }
-  main #home h1 {
-    margin-top: 10vh; }
-  main .lg-heading {
-    margin-top: 1rem;
-    font-size: 5rem; }
+    align-items: center;
+    text-align: center; }
   main .sm-heading {
     font-size: 1rem;
   }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-branding .portrait {
+    background: url("../img/linkedindpSmall.jpg");
+    width: 150px;
+    height: 150px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
   body#bg-img:after {
     content: '';
     position: absolute;
@@ -754,13 +764,22 @@ select{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
     background-attachment: fixed;
     background-size: cover; 
-  } 
+  }
+  .education {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(1, 1fr); 
+    position: relative;
+    right: 24px;
+  }
   .container {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(1, 1fr); }
   .experience {
-    grid-template-columns: 1fr; } 
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    right: 24px;
+   }
   #navbar a {
     padding: 9px;
     font-size: 10px;
