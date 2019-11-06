@@ -410,15 +410,15 @@ main#home h1 {
 
 .bar.learning::before{
   width: calc(20% - 10px);
-  background-color: #FEF24E;
+  background-color: #f1c40f;
 }
 .bar.basic::before{
   width: calc(50% - 10px);
-  background-color: #FEF24E;
+  background-color: #f1c40f;
 }
 .bar.intermediate::before{
   width: calc(65% - 10px);
-  background-color: #A5FF7F;
+  background-color: #2ecc71;
 }
 .bar.advanced::before{
   width: calc(80% - 10px);
@@ -426,7 +426,7 @@ main#home h1 {
 }
 .bar.expert::before{
   width: calc(100% - 10px);
-  background-color: rgb(39, 83, 227);
+  background-color: #341f97;
 }
   
     
