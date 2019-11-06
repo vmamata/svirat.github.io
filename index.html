@@ -31,6 +31,7 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#skills" id="navbar-skills">Skills</a>
       <a href="#work">Projects</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
@@ -208,7 +209,58 @@
 
   <hr data-aos="slide-right" size="4" width="80%"/>
 
-  
+  <!-- SKILLS -->
+
+  <main id="skills" class="major-section">
+
+    <h2 data-aos="fade-in" class="md-heading">
+      My
+      <span class="text-blue">Skills</span>
+    </h2>
+    <h3 data-aos="fade-in" class="sm-heading">
+      Here's my proficiency with the industry-critical skills
+    </h3>
+
+    <div class="skills">
+
+      <div data-aos="fade-up" class="item"><b class="hidden-title bar-announcer">Domain</b>
+        <div class="hidden expert" data-skill="Algorithms & Data Structures"></div>
+        <div class="hidden advanced" data-skill="Database Management Systems"></div>
+        <div class="hidden advanced" data-skill="Web Development"></div>
+        <div class="hidden intermediate" data-skill="Operating Systems"></div>
+        <div class="hidden intermediate" data-skill="Cryptography & Software Security"></div>
+        <div class="hidden basic" data-skill="Computer Networks"></div>
+        <div class="hidden basic" data-skill="Mobile Development"></div>
+      </div>
+
+      <div data-aos="fade-up" class="item"><b class="hidden-title bar-announcer">Languages</b>
+        <div class="hidden expert" data-skill="Python"></div>
+        <div class="hidden expert" data-skill="Java"></div>
+        <div class="hidden advanced" data-skill="C++"></div>
+        <div class="hidden advanced" data-skill="C"></div>
+        <div class="hidden intermediate" data-skill="TypeScript & JavaScript"></div>
+        <div class="hidden intermediate" data-skill="PHP"></div>
+        <div class="hidden intermediate" data-skill="SQL"></div>
+        <div class="hidden intermediate" data-skill="HTML & CSS"></div>
+        <div class="hidden basic" data-skill="R"></div>
+      </div>
+    
+      <div data-aos="fade-up" class="item"><b class="hidden-title bar-announcer">Methodology</b>
+        <div class="hidden expert" data-skill="Agile"></div>
+        <div class="hidden expert" data-skill="Test-Driven Development"></div>
+        <div class="hidden advanced" data-skill="Scrum"></div>
+        <div class="hidden advanced" data-skill="Extreme Programming"></div>
+      </div>
+
+      
+
+    </div>
+
+
+  </main>
+
+  <hr data-aos="slide-right" size="4" width="80%"/>
+
   <!-- PROJECTS -->
 
   <main id="work" class="major-section">
@@ -422,6 +474,14 @@ function load() {
       document.documentElement.style.setProperty('--secondary-color', color);
     }
   }
+
+  //to preserve animations on reload, make them hidden again
+  var bars = document.getElementsByClassName("bar");
+  for(var i = 0; i < bars.length; i++) {
+    bars[i].classList.remove("bar");
+    bars[i].classList.add("hidden");
+  }
+
 }
 
 (function() {
@@ -469,6 +529,21 @@ function scroll() {
   } else {
     navbar.classList.remove("sticky");
   }
+
+  //add the bar animations if reached
+  var navbar_skills = document.getElementById("navbar-skills");
+  if(navbar_skills.classList.contains("active")) {
+    var bars = document.getElementsByClassName("hidden");
+    for(var i = 0; i < bars.length; i++) {
+      bars[i].classList.add("bar");
+      bars[i].classList.remove("hidden");
+    }
+    var btitles = document.getElementsByClassName("hidden-title");
+    for(var i = 0; i < btitles.length; i++) {
+      btitles[i].classList.remove("hidden-title");
+    }
+  }
+  
 }
 
 var currentlyNight = false;
