@@ -878,7 +878,6 @@ select{
   .skills {
     grid-template-columns: repeat(1, 1fr); 
     position: relative;
-    right: 24px;
   }
   #navbar a {
     padding: 9px;
