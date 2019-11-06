@@ -8,6 +8,7 @@
   --navbar-background: #111;
   --button-border-color: none;
   --dropdown-color: #fff;
+  --bar-background: #EEE;
   /* nightlight which is only highlighted in dark mode */
   --nightlight-color: rgb(0,0,0,0.2);
 }
@@ -21,6 +22,7 @@
   --navbar-background: #111;
   --button-border-color: 0.5px solid #e1e1ff;
   --dropdown-color: #000;
+  --bar-background: #222;
   --nightlight-color: var(--secondary-color);
 }
 
@@ -341,6 +343,92 @@ main#home h1 {
   cursor: pointer;
   font-size: 21px;
   text-align: center; }
+
+.skills {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.hidden-title {
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.bar{
+  background-color: var(--bar-background);
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: var(--secondary-color); /* default background color */
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;    
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+/* used for front-end and back-end skills */
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+  background-color: #FEF24E;
+}
+.bar.basic::before{
+  width: calc(50% - 10px);
+  background-color: #FEF24E;
+}
+.bar.intermediate::before{
+  width: calc(65% - 10px);
+  background-color: #A5FF7F;
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+  background-color: #27AEE3;
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+  background-color: rgb(39, 83, 227);
+}
+  
     
 .projects {
   display: grid;
@@ -651,10 +739,13 @@ select{
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
-    .container {
-      grid-template-columns: repeat(4, 1fr); }
-    .experience {
-      grid-template-columns: repeat(4, 1fr); } }
+  .container {
+    grid-template-columns: repeat(4, 1fr); }
+  .experience {
+    grid-template-columns: repeat(4, 1fr); }
+  .skills {
+    grid-template-columns: repeat(3, 1fr); }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -662,6 +753,8 @@ select{
   .container {
     grid-template-columns: repeat(3, 1fr); }
   .experience {
+    grid-template-columns: repeat(3, 1fr); }
+  .skills {
     grid-template-columns: repeat(3, 1fr); }
   body#bg-img:after {
     content: '';
@@ -731,6 +824,8 @@ select{
     grid-template-columns: repeat(2, 1fr); }
   .experience {
     grid-template-columns: repeat(2, 1fr); }
+  .skills {
+    grid-template-columns: repeat(2, 1fr); }
   /*.experience {
     grid-template-columns: repeat(1, 1fr); }  */
 }
@@ -780,8 +875,13 @@ select{
     position: relative;
     right: 24px;
    }
+  .skills {
+    grid-template-columns: repeat(1, 1fr); 
+    position: relative;
+    right: 24px;
+  }
   #navbar a {
     padding: 9px;
-    font-size: 10px;
+    font-size: 9px;
   }
 }
