@@ -11,7 +11,8 @@
   --bar-background: #DDD;
   /* nightlight which is only highlighted in dark mode */
   --nightlight-color: rgb(0,0,0,0.2);
-  --skills-bar-color: linear-gradient(to right, #3498db, #3498db);
+  --skills-bar-color: linear-gradient(to right, #3498db ,  #3498db);
+  --skills-bar-color-hover: linear-gradient(to right, var(--secondary-color) ,  var(--primary-color));
 }
 
 [data-theme="dark"] {
@@ -25,7 +26,8 @@
   --dropdown-color: #000;
   --bar-background: #222;
   --nightlight-color: var(--secondary-color);
-  --skills-bar-color: linear-gradient(to right, var(--secondary-color) ,  var(--secondary-color));
+  --skills-bar-color: linear-gradient(to right, #3498db, #3498db);
+  --skills-bar-color-hover: linear-gradient(to right, var(--secondary-color) ,  var(--primary-color));
 }
 
 .menu-btn {
@@ -405,6 +407,10 @@ main#home h1 {
 /* used for front-end and back-end skills */
 .bar::before {
   background: var(--skills-bar-color);
+}
+.bar:hover::before {
+  background: var(--skills-bar-color-hover);
+  transition: transition: all 0.5s ease-out;
 }
 .bar.learning::before{
   width: calc(20% - 10px);
