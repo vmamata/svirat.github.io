@@ -416,16 +416,16 @@ main#home h1 {
   width: calc(20% - 10px);
 }
 .bar.basic::before{
-  width: calc(50% - 10px);
+  width: calc(55% - 10px);
 }
 .bar.intermediate::before{
-  width: calc(60% - 10px);
+  width: calc(65% - 10px);
 }
 .bar.advanced::before{
-  width: calc(70% - 10px);
+  width: calc(75% - 10px);
 }
 .bar.expert::before{
-  width: calc(80% - 10px);
+  width: calc(90% - 10px);
 }
   
     
