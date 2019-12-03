@@ -879,6 +879,9 @@ select{
     grid-template-columns: repeat(1, 1fr); 
     position: relative;
   }
+  .bar {
+    font-size: 0.75rem;
+  }
   #navbar a {
     padding: 9px;
     font-size: 9px;
