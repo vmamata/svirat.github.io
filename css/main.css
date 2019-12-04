@@ -12,7 +12,7 @@
   /* nightlight which is only highlighted in dark mode */
   --nightlight-color: rgb(0,0,0,0.2);
   --skills-bar-color: linear-gradient(to right, #3498db ,  #3498db);
-  --skills-bar-color-hover: linear-gradient(to right, var(--primary-color) ,  var(--secondary-color));
+  --skills-bar-color-hover: linear-gradient(to right, var(--primary-color),  purple);
 }
 
 [data-theme="dark"] {
@@ -27,7 +27,7 @@
   --bar-background: #222;
   --nightlight-color: var(--secondary-color);
   --skills-bar-color: linear-gradient(to right, #3498db, #3498db);
-  --skills-bar-color-hover: linear-gradient(to right, var(--primary-color) ,  var(--secondary-color));
+  --skills-bar-color-hover: linear-gradient(to right, var(--primary-color),  purple);
 }
 
 [data-theme="outrun"] {
