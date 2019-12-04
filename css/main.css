@@ -30,6 +30,21 @@
   --skills-bar-color-hover: linear-gradient(to right, var(--primary-color) ,  var(--secondary-color));
 }
 
+[data-theme="outrun"] {
+  --primary-color: #36CDC4;
+  --secondary-color: #FF1690;
+  --font-color: #fff;
+  --bg-color: #1C0658;
+  --heading-color: #36CDC4;
+  --navbar-background: #5C2686;
+  --button-border-color: 0.5px solid #36CDC4;
+  --dropdown-color: rgb(65, 0, 114); /* cards in About section & dropdown */
+  --bar-background: #5C2686;
+  --nightlight-color: var(--secondary-color);
+  --skills-bar-color: linear-gradient(to right, #36CDC4, #FF1690);
+  --skills-bar-color-hover: linear-gradient(to right, #5C2686, #FF1690);
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
