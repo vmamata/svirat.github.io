@@ -476,16 +476,23 @@ function load() {
   if(window.location.href.endsWith("#!")) {
     window.location.href = window.location.href.substr(0, -2);
   }
+  
   //allow the user to change the shade color, by adding ?colorName at end of URL
   if(window.location.href.indexOf("?") > -1) {
     var color = window.location.href.split("?")[1];
-    //get only the color in a situation like "?colorName#contact"
-    color = color.split("#")[0] 
-    //making sure it is a valid color
-    var s = new Option().style;
-    s.color = color;
-    if(s.color == color){
-      document.documentElement.style.setProperty('--secondary-color', color);
+    if(color == "outrun") {
+      document.documentElement.setAttribute('data-theme', 'outrun');
+      document.getElementById("dark-mode-text").style.display = "none";
+    }
+    else {
+      //get only the color in a situation like "?colorName#contact"
+      color = color.split("#")[0] 
+      //making sure it is a valid color
+      var s = new Option().style;
+      s.color = color;
+      if(s.color == color){
+        document.documentElement.style.setProperty('--secondary-color', color);
+      }
     }
   }
 
