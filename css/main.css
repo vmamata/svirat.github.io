@@ -1,7 +1,6 @@
 :root {
   --primary-color: #302AE6;
   --secondary-color: #0080FF; 
-  --secondary-highlight: var(--secondary-color);
   --darker-secondary-color: rgb(0, 70, 255);
   --font-color: #000;
   --bg-color: #F2F3F4;
@@ -19,7 +18,6 @@
 [data-theme="dark"] {
   --primary-color: #302AE6;
   --secondary-color: #0080FF;
-  --secondary-highlight: var(--secondary-color);
   --font-color: #fff;
   --bg-color: #232b2b;
   --heading-color: #e1e1ff;
@@ -27,7 +25,7 @@
   --button-border-color: 0.5px solid #e1e1ff;
   --dropdown-color: #000;
   --bar-background: #222;
-  --nightlight-color: var(--secondary-highlight);
+  --nightlight-color: var(--secondary-color);
   --skills-bar-color: linear-gradient(to right, #3498db, #3498db);
   --skills-bar-color-hover: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
@@ -35,7 +33,6 @@
 [data-theme="outrun"] {
   --primary-color: #36CDC4;
   --secondary-color: #FF1690;
-  --secondary-highlight: #36CDC4;
   --font-color: #fff;
   --bg-color: #1C0658;
   --heading-color: #36CDC4;
@@ -43,7 +40,7 @@
   --button-border-color: 0.5px solid #36CDC4;
   --dropdown-color: rgb(65, 0, 114); /* cards in About section & dropdown */
   --bar-background: #5C2686;
-  --nightlight-color: var(--secondary-highlight);
+  --nightlight-color: var(--secondary-color);
   --skills-bar-color: linear-gradient(to right, #36CDC4, #FF1690);
   --skills-bar-color-hover: linear-gradient(to right, #5C2686, #FF1690);
 }
@@ -249,7 +246,7 @@ main#home h1 {
   height: 250px;
   width: 250px;
   border-radius: 50%; 
-  border:var(--secondary-highlight) 2px solid;
+  border:var(--secondary-color) 3px solid;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: var(--dropdown-color);}
@@ -298,7 +295,7 @@ main#home h1 {
   width: 250px;
   height: 250px;
   border-radius: 50%; 
-  border: var(--secondary-highlight) 2px solid;
+  border: var(--secondary-color) 3px solid;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: var(--dropdown-color);}
@@ -316,7 +313,7 @@ main#home h1 {
   grid-area: job3; }
 .about-info .job {
   padding: 0.5rem;
-  border-bottom: var(--secondary-highlight) 5px solid; }
+  border-bottom: var(--secondary-color) 5px solid; }
 
 .experience {
   display: grid;
@@ -324,10 +321,10 @@ main#home h1 {
   grid-template-columns: repeat(4, 1fr); }
 .experience img {
   width: 300px;
-  border: 3px var(--secondary-highlight) solid; }
+  border: 3px var(--secondary-color) solid; }
 .experience img:hover {
   opacity: 0.5;
-  border-color: var(--secondary-highlight);
+  border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .experience .job-1 {
   grid-area: job1; }
@@ -342,7 +339,7 @@ main#home h1 {
   font-size: 20px;
   width: 300px; /* 360px; */
   padding: 0.5rem;
-  border-bottom: var(--secondary-highlight) 5px solid;  }
+  border-bottom: var(--secondary-color) 5px solid;  }
 
 .experience .btn-dark {
   background: black;
@@ -458,10 +455,10 @@ main#home h1 {
   grid-template-columns: repeat(3, 1fr); }
 .projects img {
   /*width: 100%;*/
-  border: 3px var(--secondary-highlight) solid; }
+  border: 3px var(--secondary-color) solid; }
 .projects img:hover {
   opacity: 0.5;
-  border-color: var(--secondary-highlight);
+  border-color: var(--secondary-color);
   transition: all 0.5s ease-out; }
 .projects .job-1 {
   grid-area: job1; }
@@ -476,7 +473,7 @@ main#home h1 {
   position: absolute;
   width: 300px; /* 375px; */
   padding: 0.5rem;
-  border-bottom: var(--secondary-highlight) 5px solid;  }
+  border-bottom: var(--secondary-color) 5px solid;  }
 
 
 .projects .btn-dark {
@@ -513,14 +510,14 @@ main#home h1 {
   margin-top: 1rem; }
 .boxes div {
   font-size: 2rem;
-  border: 3px var(--secondary-highlight) solid;
+  border: 3px var(--secondary-color) solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   background: white;
   transition: all 0.5s ease-out; }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: var(--secondary-highlight);
+  background: var(--secondary-color);
   color: white; }
 .boxes div:hover span {
   color: white; }
@@ -786,14 +783,14 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-tablets.jpg); /* HOME COLOR */
     background-attachment: fixed;
     background-size: cover; 
   }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
@@ -833,7 +830,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
     background-attachment: fixed;
     background-size: cover; 
   }
@@ -852,7 +849,7 @@ select{
     grid-template-columns: repeat(1, 1fr); }  */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 371px) and (max-width: 500px) {
   main {
     align-items: center;
     text-align: center; }
@@ -878,7 +875,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
     background-attachment: fixed;
     background-size: cover; 
   }
@@ -907,5 +904,63 @@ select{
   #navbar a {
     padding: 9px;
     font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  main .sm-heading {
+    font-size: 1rem;
+  }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-branding .portrait {
+    background: url("../img/linkedindpSmall.jpg");
+    width: 150px;
+    height: 150px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  body#bg-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
+    background-attachment: fixed;
+    background-size: cover; 
+  }
+  .education {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(1, 1fr); 
+    position: relative;
+    right: 24px;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr); }
+  .experience {
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    right: 24px;
+   }
+  .skills {
+    grid-template-columns: repeat(1, 1fr); 
+    position: relative;
+  }
+  .bar {
+    font-size: 0.75rem;
+  }
+  #navbar a {
+    padding: 8px;
+    font-size: 8px;
   }
 }
