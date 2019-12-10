@@ -461,7 +461,7 @@
           <i class="fab fa-twitter fa-1x"></i>
         </a>
     </div>
-    <span class="text-blue sm-heading">Virat Singh</span> <span class="sm-heading">© <span id="current-year"></span> </span>
+    <span class="text-blue sm-heading">Virat Singh</span> <span class="sm-heading">© 2019 </span>
 </footer>
 
 <script src="js/main.js"></script>
@@ -473,10 +473,6 @@ There is a problem with Chrome that changes fonts on refresh
 So a simple fix is to do a hard-refresh when the fonts are about to change
 */
 function load() {
-  
-  //dynamically load the copy-right year at the footer
-  document.getElementById("current-year").innerHTML = new Date().getFullYear(); 
-  
   if(window.location.href.endsWith("#!")) {
     window.location.href = window.location.href.substr(0, -2);
   }
