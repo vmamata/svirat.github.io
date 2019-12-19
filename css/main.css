@@ -849,7 +849,7 @@ select{
     grid-template-columns: repeat(1, 1fr); }  */
 }
 
-@media screen and (min-width: 371px) and (max-width: 500px) {
+@media screen and (min-width: 377px) and (max-width: 500px) {
   main {
     align-items: center;
     text-align: center; }
@@ -865,7 +865,7 @@ select{
     width: 100%;
     min-height: 0; }
   .menu-branding .portrait {
-    background: url("../img/linkedindpSmall.jpg");
+    background: url("../img/linkedindp-small.jpg");
     width: 150px;
     height: 150px; }
   .about-info {
@@ -911,7 +911,7 @@ select{
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 376px) {
   main {
     align-items: center;
     text-align: center; }
@@ -941,7 +941,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-small.jpg); /* HOME COLOR */
     background-attachment: scroll;
     background-size: cover; 
   }
