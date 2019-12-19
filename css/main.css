@@ -784,7 +784,7 @@ select{
     height: 100%;
     z-index: -1;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover; 
   }
 }
@@ -831,7 +831,7 @@ select{
     height: 100%;
     z-index: -1;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover; 
   }
   .education {
@@ -880,7 +880,7 @@ select{
     height: 100%;
     z-index: -1;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover; 
   }
   .education {
@@ -942,7 +942,7 @@ select{
     height: 100%;
     z-index: -1;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/moon.jpg); /* HOME COLOR */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover; 
   }
   .education {
