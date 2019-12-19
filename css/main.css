@@ -940,7 +940,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-small.jpg); /* HOME COLOR */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
     background-attachment: scroll;
     background-size: cover; 
   }
