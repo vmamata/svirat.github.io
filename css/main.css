@@ -277,6 +277,7 @@ main#home h1 {
   transition: 0.3s;
   padding: 2px 16px;
   background-color: var(--dropdown-color);
+  border-radius: 10px;
 }
   
 /* On mouse-over, add a deeper shadow */
