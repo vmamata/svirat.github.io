@@ -58,12 +58,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color); 
+    background: var(--primary-color); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color); 
+    background: var(--secondary-color); 
 }
 
 .menu-btn {
