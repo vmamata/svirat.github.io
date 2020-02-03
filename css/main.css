@@ -778,7 +778,7 @@ select{
       
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(4, 1fr); }
   .container {
     grid-template-columns: repeat(4, 1fr); }
   .experience {
